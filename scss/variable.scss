@@ -1,0 +1,62 @@
+
+$nav-bg-color: rgb(255, 255, 255);
+$gradient-color: linear-gradient(90deg, #008374 0%, #89BA16 100%);
+$hero-gradient: linear-gradient(90deg, #008374b2 0%, #89ba16b6 100%);
+$font-family: sans-serif;
+$para-font: 18px;
+$para-dark-color: #adb5bd;
+$para-light-color: #ccc;
+$heading-dark: #495057;
+$heading-light: #f1f1f1;
+$heading-size: 2rem;
+$btn-small-color: #FF8F1F;
+$font-bold: 700;
+$box-shadow: 0 0 5px 5px #cccccc38;
+$services-item-bg: #383b3f;
+
+.btn-small{
+    border: none;
+    background: $gradient-color;
+    padding: 10px 15px;
+    background: $btn-small-color;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    transition: .4s;
+}
+.heading-style{
+    color: $heading-dark;
+    font-size: $heading-size;
+    font-weight: $font-bold;
+
+}
+.para-style{
+    font-size: 20px;
+    line-height: 25px;
+    color: #adb5bd;
+    text-align: left;
+}
+.button-style{
+    border: none;
+    padding-bottom: 10px;
+    background: none;
+    position: relative;
+    font-weight: bold;
+    color: $heading-dark;
+}
+.button-style::after{
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    transition: .4s;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: $heading-dark;
+}
+.button-style:hover::after{
+    width: 100%;
+    height: 2px;
+}

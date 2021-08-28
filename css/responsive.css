@@ -1,0 +1,6 @@
+@media (max-width: 575px) {
+  .hero .hero-heading {
+    font-size: 30px !important; }
+  .footer-top ul {
+    display: flex;
+    flex-direction: column; } }

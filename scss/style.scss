@@ -1,0 +1,703 @@
+@import 'variable';
+body{
+    font-family: sans-serif;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+h1,h2,h3,h4,h5,h6,p{
+    margin: 0;
+    padding: 0;
+}
+
+::selection{
+    background: #89BA16;
+    color: white;
+}
+html{
+    scroll-behavior: smooth;
+}
+button:focus{
+    outline: none;
+}
+// nav bar css style
+.navbar{
+    background: $nav-bg-color;
+    border-bottom: 1px solid rgba(204, 204, 204, 0.452);
+    
+        .logo-img{
+            width: 100px; 
+        }
+    .navbar-nav{
+
+        .nav-link{
+             color: rgb(83, 83, 83) !important;
+             font-family: $font-family;
+            font-size: 17px i !important;
+            transition: .3s;
+             
+        }
+        .nav-link:hover{
+            color: #FF8F1F !important;
+        }
+        .nav-link:last-child:hover{
+            color: white !important
+        }
+        .download-btn{
+            @extend .btn-small;
+            color: white !important;
+            font-weight: bold;
+            font-size: 14px;
+        }
+
+    }
+}
+// **** nav bar end =======================***** 
+
+// ****** Hero section start **********
+.hero{
+    background-image: url(../img/onepage-intro-bg-2.jpg);
+    background-size: cover;
+    height: 90vh;
+    background-repeat: no-repeat;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+    background-attachment: fixed;
+
+    .bg-heading{
+        display: inline-block;
+        background: #4d8a59;
+        font-size: 16px;
+        padding: 5px;
+        border-radius: 5px;
+        color: $heading-light;
+    }
+    .hero-heading{
+        font-size: 60px;
+        color: $heading-light;
+        font-weight: $font-bold;
+        line-height: 1.3;
+    }
+    p{
+        font-size: $para-font;
+        font-weight: $font-bold;
+        color: rgba(255, 255, 255, 0.849);
+    }
+    .hero-btn{
+        span{
+            transition: .4s;
+        }
+        .btn-1{
+            @extend .btn-small;
+            background: white;
+            color: black;
+
+        }
+        .btn-2{
+            @extend .btn-small;
+            color: white;
+            background: #89c185;
+        }
+        .btn-1:hover span,.btn-2:hover span{
+            padding-right: 10px;
+        }
+    }
+    
+}
+.hero::after{
+    content: '';
+    position: absolute;
+    background: $hero-gradient;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+// ****** Hero section End **********
+// element section start &**************
+.content{
+    .content-heading{
+        h3{
+            font-size: $heading-size !important;
+            color: $heading-dark;
+        }
+    }
+    .content-right{
+        p{
+            @extend .para-style;
+        }
+        button{
+            @extend .button-style;
+        }
+        
+    }
+}
+// element section End ********
+/// card section start *******
+.card-section{
+    .card{
+        background: url('../img/onepage-image-1.jpg') center center no-repeat;
+        background-size: cover;
+        position: relative;
+        z-index: 1;
+        min-height: 452px;
+        margin-bottom: 10px;
+        border-radius: 5px;
+        
+        .card-body{
+            h2{
+                color: $heading-light;
+                font-size: $heading-size;
+                font-family: sans-serif;
+            }
+            p{
+                font-size: 17px;
+                color: white;
+            }
+            button{
+                @extend .btn-small;
+                background: white;
+                color: $heading-dark;
+                margin-top: 10px;
+                i{
+                transition: .4s;
+                    
+                }
+            }
+            button:hover i{
+                padding-left: 10px;
+            }
+        }
+    }
+    .card::after{
+        content: "";
+        position: absolute;
+        background: $hero-gradient;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        z-index: -1;
+        transition: .4s;
+
+    }
+    .card:hover::after{
+        background-color: #008374a9;
+    }
+
+}
+/// card section End *******
+
+// features section style start
+.features {
+     .text-area{
+        span{
+             font-size: 14px;
+             background-color: #e9ecef;
+             padding: 5px 7px;
+             border-radius: 3px;
+             font-weight: 600;
+        }
+        h3{
+            color: $heading-dark;
+            font-size: $heading-size;
+            font-weight: $font-bold;
+        }
+
+     }
+     .icon-box{
+         margin-bottom: 10px;
+         h4{
+             color: $heading-dark;
+             font-size: 18px;
+             font-weight: bold;
+         }
+         p{
+             @extend .para-style;
+             text-align: center;
+             font-size: 14px;
+             line-height: 22px;
+         }
+     }
+     .features-list{
+            border-radius: 10px;
+            box-shadow: $box-shadow;
+            padding: 40px 28px;
+            margin-right: 19px;
+        .item{
+             align-items: center;
+             img{
+                 width: 40px;
+                 margin-right: 10px;
+             }
+             h5{
+                 color: $heading-dark;
+                 font-weight: bold;
+             }
+         }
+     }
+}
+// features section style start
+// shop style start 
+.shop{
+    .shop-dec{
+        h2{
+            @extend .heading-style;
+            
+        }
+        p{
+            @extend .para-style;
+            margin-top: 10px;
+        }
+        button{
+            @extend .button-style;
+            margin-top: 15px;
+        }
+    }
+    .shop-card{
+        overflow: hidden;
+        border-radius: 5px;
+        position: relative;
+
+        img{
+        transition: .4s;
+        }
+        button{
+            position: absolute;
+            bottom: 20px;
+            left: 0px;
+            right: 0px;
+            margin: auto;
+            @extend .btn-small;
+            background: $gradient-color;
+            color: white;
+            padding-right: 33px;
+            
+
+        }
+    }
+    .shop-card:hover img{
+        transform: scale(1.1);
+    }
+    
+    
+
+}
+// shop style End 
+// services section css style 
+.services{
+    background: black;
+    .services-card{
+        background: $services-item-bg;
+        padding: 25px;
+        border-radius: 7px;
+        margin-bottom: 20px;
+        height: 364px;
+        transition: .4s;
+        h2{
+            color: $heading-light;
+            font-size: 30px;
+            font-weight: $font-bold;
+            margin-top: 10px;
+        }
+        p{
+            @extend .para-style;
+            color: rgba(204, 204, 204, 0.644);
+            font-size: 18px;
+            margin-top: 13px;
+            
+        }
+    }
+    .services-card:hover{
+        transform: translateY(10px);
+        transform-origin: top;
+    }
+    .services-details{
+        h3{
+            color: $heading-light;
+            font-size: $heading-size;
+            font-weight: $font-bold;
+            font-size: 2.2rem;
+            margin-bottom: 10px;
+        }
+        p{
+            @extend .para-style;
+            color: rgb(129, 129, 129);
+        }
+        button{
+            @extend .btn-small;
+            margin-top: 25px;
+            background: $gradient-color;
+        }
+    }
+}
+// services section css style End
+
+
+// pricing table section start
+.pricing{
+    .pricing-content{
+        h6{
+            background: #e9ecef;
+            display: inline-block;
+            padding: 5px 10px;
+            font-size: 13px;
+            font-weight: bold;
+            color: $heading-dark;
+        }
+        h2{
+            @extend .heading-style;
+            margin: 10px 0px;
+        }
+        p{
+            @extend .para-style;
+            text-align: center;
+        }
+        .brand-section{
+            display: flex;
+            justify-content: space-between;
+
+            img{
+                width: 50px;
+                
+            }
+        }
+    }
+    .brand{
+        img{
+            filter: contrast(0);
+            transition: .2s ;
+        }
+        img:hover{
+            filter: contrast(1);
+            transform: translateY(-8px);
+        }
+    }
+    .card-area{
+        border: none !important;
+        box-shadow: 1px 1px 20px 0px #cccccc73;
+        transition: .4s;
+        p{
+            span{
+                background: #f5fce4;
+                font-size: 15px;
+                color: #91bf25;
+                padding: 4px 10px;
+                font-weight: bold;
+                border-radius: 3px;
+            }
+        }
+        h4{
+            .dollar{
+                font-weight: bold;
+                font-size: 50px;
+                color: $heading-dark;
+            }
+            .month{
+                font-weight: bold;
+                font-size: 15px;
+
+            }
+        }
+        .p-tag{
+            color: #adb5bd;
+        }
+        ul{
+            li{
+                list-style: none;
+                color: #949596;
+                margin-bottom: 10px;
+                font-weight: bold;
+                img{
+                    margin-right: 10px;
+                }
+            }
+        }
+        button{
+            @extend .btn-small;
+            background: $gradient-color;
+        }
+    }
+    .card-area:hover{
+        transform: translateY(-10px);
+        box-shadow: 1px 1px 20px 0px #ccccccc5;
+    }
+    .middle-card{
+        background: linear-gradient(to right, #008374, #89ba16) fixed !important;
+
+        p{
+            span{
+                background: #36712d;
+                color: white;
+            }
+        }
+        h4{
+            .dollar{
+                color: white;
+            }
+            span{
+                color: white;;
+            }
+        }
+        .p-tag{
+            color: white;
+        }
+        ul{
+            li{
+                color: white;
+            }
+        }
+        button{
+            background: #36712d;
+        }
+    }
+    
+}
+// pricing table section End
+// team section start 
+.team{
+    .job-info{
+        h6{
+            background: #e9ecef;
+            display: inline-block;
+            padding: 5px 10px;
+            font-size: 13px;
+            font-weight: bold;
+            color: #495057;
+            border-radius: 3px;
+        }
+        h2{
+            @extend .heading-style;
+        }
+        p{
+            @extend .para-style;
+            text-align: center;
+        }
+        button{
+            @extend .button-style;
+        }
+    }
+    .img-card{
+        position: relative;
+        border-radius: 10px !important;
+        transition: .4s;
+        
+        .member-info{
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            z-index: 1;
+
+            h4{
+                color: rgb(218, 218, 218);
+            }
+            p{
+                @extend .para-style;
+                font-size: 14px;
+                color:rgb(206, 206, 206);
+            }
+            ul{
+                li{
+                    color: rgb(22, 22, 22);
+                    list-style: none;
+                    margin-right: 10px;
+                    transition: .4s;
+                    font-size: 18px;
+                }
+                li:hover{
+                    color: white;
+                }
+            }
+        }
+    }
+    .img-card::after{
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: linear-gradient(to right, #0083746b, #89ba1662);
+        transition: .4s;
+    }
+    .img-card:hover::after{
+        background: linear-gradient(to right, #008374b7, #89ba16b4);
+    }
+    .img-card:hover{
+        transform: scale((.9));
+    }
+}
+//team section end 
+// location section style 
+.location{
+    .address{
+        h6{
+            background: #e9ecef;
+            display: inline-block;
+            padding: 5px 10px;
+            font-size: 13px;
+            font-weight: bold;
+            color: #495057;
+            border-radius: 3px;
+        }
+        h2{
+            @extend .heading-style;
+        }
+        p{
+            @extend .para-style;
+
+        }
+        button{
+            @extend .btn-small;
+            background: $gradient-color;
+           
+            i{
+                transition: .3s;
+            }
+
+        }
+        button:hover i{
+            padding-left: 10px;
+        }
+    }
+    .location-details{
+        ul{
+            li{
+                .icon{
+                    margin-right: 10px;
+                }
+                .info{
+                    h4{
+                        color:rgb(51, 51, 51);
+                        margin-bottom: 8px;
+                    }
+                    p{
+                        @extend .para-style;
+                        font-size: 16px;
+                    }
+                }
+            }
+        }
+    }
+}
+// location section style  End 
+// join section 
+.join{
+    background: linear-gradient(90deg, #008374 0%, #89BA16 100%);
+    padding: 60px 0 !important;
+
+    .join-content{
+        h2{
+            color: rgb(236, 236, 236);
+            margin-bottom: 10px;
+        }
+        p{
+            color: rgb(218, 214, 214); 
+            font-size: 18px;  
+        }
+    }
+    .join-button{
+        display: flex;
+        align-items: center;
+        .join-btn{
+            @extend .btn-small;
+            
+            i{
+                transition: .3s;
+            }
+        
+        }
+        .join-btn:hover i{
+            padding-right: 10px;
+        }
+    }
+}
+// footer top 
+.footer{
+    .footer-top{
+        ul{
+            li{
+                list-style-type: none;
+                padding: 0 12px;
+                
+                a{
+                    color: rgb(104, 104, 104);
+                    text-decoration: none;
+                    transition: .4s;
+                }
+                a:hover{
+                    color: #89BA16;
+                }
+            }
+        }
+    }
+    .f-logo{
+        img{
+            width: 130px;
+            margin-bottom: 10px;
+
+        }
+        p{
+            @extend .para-style;
+            font-size: 15px;
+        }
+        ul{
+            li{
+                list-style-type: none;
+                
+                i{
+                    font-size: 20px;
+                    padding: 8px;
+                    background: #89ba166c;
+                    margin-right: 5px;
+                    display: block;
+                    border-radius: 7px;
+                    color: #2c2c2c;
+                    transition: .4s;
+                }
+                 
+                
+            }
+            li:hover i{
+                background: rgb(73, 139, 6);
+                color: white;
+            }
+        }
+    }
+    .product{
+        h5{
+            color: rgb(54, 54, 54);
+            font-size: 20px;
+            margin-bottom: 20px;
+        }
+        ul{
+            li{
+                list-style-type: none;
+
+                a{
+                    text-decoration: none;
+                    color: rgb(129, 129, 129);
+                    padding-bottom: 15px;
+                    display: block;
+                    transition: .4s;
+                }
+                .hiring{
+                    color: rgb(73, 139, 6);
+                    text-decoration: underline;
+                }
+                a:hover{
+                    color:rgb(73, 139, 6);
+                }
+            }
+        }
+    }
+}
+
+

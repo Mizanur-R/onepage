@@ -1,0 +1,496 @@
+.btn-small, .navbar .navbar-nav .download-btn, .hero .hero-btn .btn-1, .hero .hero-btn .btn-2, .card-section .card .card-body button, .shop .shop-card button, .services .services-details button, .pricing .card-area button, .location .address button, .join .join-button .join-btn {
+  border: none;
+  background: linear-gradient(90deg, #008374 0%, #89BA16 100%);
+  padding: 10px 15px;
+  background: #FF8F1F;
+  border-radius: 5px;
+  color: white;
+  font-weight: bold;
+  font-size: 16px;
+  transition: .4s; }
+
+.heading-style, .shop .shop-dec h2, .pricing .pricing-content h2, .team .job-info h2, .location .address h2 {
+  color: #495057;
+  font-size: 2rem;
+  font-weight: 700; }
+
+.para-style, .content .content-right p, .features .icon-box p, .shop .shop-dec p, .services .services-card p, .services .services-details p, .pricing .pricing-content p, .team .job-info p, .team .img-card .member-info p, .location .address p, .location .location-details ul li .info p, .footer .f-logo p {
+  font-size: 20px;
+  line-height: 25px;
+  color: #adb5bd;
+  text-align: left; }
+
+.button-style, .content .content-right button, .shop .shop-dec button, .team .job-info button {
+  border: none;
+  padding-bottom: 10px;
+  background: none;
+  position: relative;
+  font-weight: bold;
+  color: #495057; }
+
+.button-style::after, .content .content-right button::after, .shop .shop-dec button::after, .team .job-info button::after {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  transition: .4s;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: #495057; }
+
+.button-style:hover::after, .content .content-right button:hover::after, .shop .shop-dec button:hover::after, .team .job-info button:hover::after {
+  width: 100%;
+  height: 2px; }
+
+body {
+  font-family: sans-serif; }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+h1, h2, h3, h4, h5, h6, p {
+  margin: 0;
+  padding: 0; }
+
+::selection {
+  background: #89BA16;
+  color: white; }
+
+html {
+  scroll-behavior: smooth; }
+
+button:focus {
+  outline: none; }
+
+.navbar {
+  background: white;
+  border-bottom: 1px solid rgba(204, 204, 204, 0.452); }
+  .navbar .logo-img {
+    width: 100px; }
+  .navbar .navbar-nav .nav-link {
+    color: #535353 !important;
+    font-family: sans-serif;
+    font-size: 17px i !important;
+    transition: .3s; }
+  .navbar .navbar-nav .nav-link:hover {
+    color: #FF8F1F !important; }
+  .navbar .navbar-nav .nav-link:last-child:hover {
+    color: white !important; }
+  .navbar .navbar-nav .download-btn {
+    color: white !important;
+    font-weight: bold;
+    font-size: 14px; }
+
+.hero {
+  background-image: url(../img/onepage-intro-bg-2.jpg);
+  background-size: cover;
+  height: 90vh;
+  background-repeat: no-repeat;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+  background-attachment: fixed; }
+  .hero .bg-heading {
+    display: inline-block;
+    background: #4d8a59;
+    font-size: 16px;
+    padding: 5px;
+    border-radius: 5px;
+    color: #f1f1f1; }
+  .hero .hero-heading {
+    font-size: 60px;
+    color: #f1f1f1;
+    font-weight: 700;
+    line-height: 1.3; }
+  .hero p {
+    font-size: 18px;
+    font-weight: 700;
+    color: rgba(255, 255, 255, 0.849); }
+  .hero .hero-btn span {
+    transition: .4s; }
+  .hero .hero-btn .btn-1 {
+    background: white;
+    color: black; }
+  .hero .hero-btn .btn-2 {
+    color: white;
+    background: #89c185; }
+  .hero .hero-btn .btn-1:hover span, .hero .hero-btn .btn-2:hover span {
+    padding-right: 10px; }
+
+.hero::after {
+  content: '';
+  position: absolute;
+  background: linear-gradient(90deg, #008374b2 0%, #89ba16b6 100%);
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1; }
+
+.content .content-heading h3 {
+  font-size: 2rem !important;
+  color: #495057; }
+
+.card-section .card {
+  background: url("../img/onepage-image-1.jpg") center center no-repeat;
+  background-size: cover;
+  position: relative;
+  z-index: 1;
+  min-height: 452px;
+  margin-bottom: 10px;
+  border-radius: 5px; }
+  .card-section .card .card-body h2 {
+    color: #f1f1f1;
+    font-size: 2rem;
+    font-family: sans-serif; }
+  .card-section .card .card-body p {
+    font-size: 17px;
+    color: white; }
+  .card-section .card .card-body button {
+    background: white;
+    color: #495057;
+    margin-top: 10px; }
+    .card-section .card .card-body button i {
+      transition: .4s; }
+  .card-section .card .card-body button:hover i {
+    padding-left: 10px; }
+
+.card-section .card::after {
+  content: "";
+  position: absolute;
+  background: linear-gradient(90deg, #008374b2 0%, #89ba16b6 100%);
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  z-index: -1;
+  transition: .4s; }
+
+.card-section .card:hover::after {
+  background-color: #008374a9; }
+
+.features .text-area span {
+  font-size: 14px;
+  background-color: #e9ecef;
+  padding: 5px 7px;
+  border-radius: 3px;
+  font-weight: 600; }
+
+.features .text-area h3 {
+  color: #495057;
+  font-size: 2rem;
+  font-weight: 700; }
+
+.features .icon-box {
+  margin-bottom: 10px; }
+  .features .icon-box h4 {
+    color: #495057;
+    font-size: 18px;
+    font-weight: bold; }
+  .features .icon-box p {
+    text-align: center;
+    font-size: 14px;
+    line-height: 22px; }
+
+.features .features-list {
+  border-radius: 10px;
+  box-shadow: 0 0 5px 5px #cccccc38;
+  padding: 40px 28px;
+  margin-right: 19px; }
+  .features .features-list .item {
+    align-items: center; }
+    .features .features-list .item img {
+      width: 40px;
+      margin-right: 10px; }
+    .features .features-list .item h5 {
+      color: #495057;
+      font-weight: bold; }
+
+.shop .shop-dec p {
+  margin-top: 10px; }
+
+.shop .shop-dec button {
+  margin-top: 15px; }
+
+.shop .shop-card {
+  overflow: hidden;
+  border-radius: 5px;
+  position: relative; }
+  .shop .shop-card img {
+    transition: .4s; }
+  .shop .shop-card button {
+    position: absolute;
+    bottom: 20px;
+    left: 0px;
+    right: 0px;
+    margin: auto;
+    background: linear-gradient(90deg, #008374 0%, #89BA16 100%);
+    color: white;
+    padding-right: 33px; }
+
+.shop .shop-card:hover img {
+  transform: scale(1.1); }
+
+.services {
+  background: black; }
+  .services .services-card {
+    background: #383b3f;
+    padding: 25px;
+    border-radius: 7px;
+    margin-bottom: 20px;
+    height: 364px;
+    transition: .4s; }
+    .services .services-card h2 {
+      color: #f1f1f1;
+      font-size: 30px;
+      font-weight: 700;
+      margin-top: 10px; }
+    .services .services-card p {
+      color: rgba(204, 204, 204, 0.644);
+      font-size: 18px;
+      margin-top: 13px; }
+  .services .services-card:hover {
+    transform: translateY(10px);
+    transform-origin: top; }
+  .services .services-details h3 {
+    color: #f1f1f1;
+    font-size: 2rem;
+    font-weight: 700;
+    font-size: 2.2rem;
+    margin-bottom: 10px; }
+  .services .services-details p {
+    color: #818181; }
+  .services .services-details button {
+    margin-top: 25px;
+    background: linear-gradient(90deg, #008374 0%, #89BA16 100%); }
+
+.pricing .pricing-content h6 {
+  background: #e9ecef;
+  display: inline-block;
+  padding: 5px 10px;
+  font-size: 13px;
+  font-weight: bold;
+  color: #495057; }
+
+.pricing .pricing-content h2 {
+  margin: 10px 0px; }
+
+.pricing .pricing-content p {
+  text-align: center; }
+
+.pricing .pricing-content .brand-section {
+  display: flex;
+  justify-content: space-between; }
+  .pricing .pricing-content .brand-section img {
+    width: 50px; }
+
+.pricing .brand img {
+  filter: contrast(0);
+  transition: .2s; }
+
+.pricing .brand img:hover {
+  filter: contrast(1);
+  transform: translateY(-8px); }
+
+.pricing .card-area {
+  border: none !important;
+  box-shadow: 1px 1px 20px 0px #cccccc73;
+  transition: .4s; }
+  .pricing .card-area p span {
+    background: #f5fce4;
+    font-size: 15px;
+    color: #91bf25;
+    padding: 4px 10px;
+    font-weight: bold;
+    border-radius: 3px; }
+  .pricing .card-area h4 .dollar {
+    font-weight: bold;
+    font-size: 50px;
+    color: #495057; }
+  .pricing .card-area h4 .month {
+    font-weight: bold;
+    font-size: 15px; }
+  .pricing .card-area .p-tag {
+    color: #adb5bd; }
+  .pricing .card-area ul li {
+    list-style: none;
+    color: #949596;
+    margin-bottom: 10px;
+    font-weight: bold; }
+    .pricing .card-area ul li img {
+      margin-right: 10px; }
+  .pricing .card-area button {
+    background: linear-gradient(90deg, #008374 0%, #89BA16 100%); }
+
+.pricing .card-area:hover {
+  transform: translateY(-10px);
+  box-shadow: 1px 1px 20px 0px #ccccccc5; }
+
+.pricing .middle-card {
+  background: linear-gradient(to right, #008374, #89ba16) fixed !important; }
+  .pricing .middle-card p span {
+    background: #36712d;
+    color: white; }
+  .pricing .middle-card h4 .dollar {
+    color: white; }
+  .pricing .middle-card h4 span {
+    color: white; }
+  .pricing .middle-card .p-tag {
+    color: white; }
+  .pricing .middle-card ul li {
+    color: white; }
+  .pricing .middle-card button {
+    background: #36712d; }
+
+.team .job-info h6 {
+  background: #e9ecef;
+  display: inline-block;
+  padding: 5px 10px;
+  font-size: 13px;
+  font-weight: bold;
+  color: #495057;
+  border-radius: 3px; }
+
+.team .job-info p {
+  text-align: center; }
+
+.team .img-card {
+  position: relative;
+  border-radius: 10px !important;
+  transition: .4s; }
+  .team .img-card .member-info {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: 1; }
+    .team .img-card .member-info h4 {
+      color: #dadada; }
+    .team .img-card .member-info p {
+      font-size: 14px;
+      color: #cecece; }
+    .team .img-card .member-info ul li {
+      color: #161616;
+      list-style: none;
+      margin-right: 10px;
+      transition: .4s;
+      font-size: 18px; }
+    .team .img-card .member-info ul li:hover {
+      color: white; }
+
+.team .img-card::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(to right, #0083746b, #89ba1662);
+  transition: .4s; }
+
+.team .img-card:hover::after {
+  background: linear-gradient(to right, #008374b7, #89ba16b4); }
+
+.team .img-card:hover {
+  transform: scale(0.9); }
+
+.location .address h6 {
+  background: #e9ecef;
+  display: inline-block;
+  padding: 5px 10px;
+  font-size: 13px;
+  font-weight: bold;
+  color: #495057;
+  border-radius: 3px; }
+
+.location .address button {
+  background: linear-gradient(90deg, #008374 0%, #89BA16 100%); }
+  .location .address button i {
+    transition: .3s; }
+
+.location .address button:hover i {
+  padding-left: 10px; }
+
+.location .location-details ul li .icon {
+  margin-right: 10px; }
+
+.location .location-details ul li .info h4 {
+  color: #333333;
+  margin-bottom: 8px; }
+
+.location .location-details ul li .info p {
+  font-size: 16px; }
+
+.join {
+  background: linear-gradient(90deg, #008374 0%, #89BA16 100%);
+  padding: 60px 0 !important; }
+  .join .join-content h2 {
+    color: #ececec;
+    margin-bottom: 10px; }
+  .join .join-content p {
+    color: #dad6d6;
+    font-size: 18px; }
+  .join .join-button {
+    display: flex;
+    align-items: center; }
+    .join .join-button .join-btn i {
+      transition: .3s; }
+    .join .join-button .join-btn:hover i {
+      padding-right: 10px; }
+
+.footer .footer-top ul li {
+  list-style-type: none;
+  padding: 0 12px; }
+  .footer .footer-top ul li a {
+    color: #686868;
+    text-decoration: none;
+    transition: .4s; }
+  .footer .footer-top ul li a:hover {
+    color: #89BA16; }
+
+.footer .f-logo img {
+  width: 130px;
+  margin-bottom: 10px; }
+
+.footer .f-logo p {
+  font-size: 15px; }
+
+.footer .f-logo ul li {
+  list-style-type: none; }
+  .footer .f-logo ul li i {
+    font-size: 20px;
+    padding: 8px;
+    background: #89ba166c;
+    margin-right: 5px;
+    display: block;
+    border-radius: 7px;
+    color: #2c2c2c;
+    transition: .4s; }
+
+.footer .f-logo ul li:hover i {
+  background: #498b06;
+  color: white; }
+
+.footer .product h5 {
+  color: #363636;
+  font-size: 20px;
+  margin-bottom: 20px; }
+
+.footer .product ul li {
+  list-style-type: none; }
+  .footer .product ul li a {
+    text-decoration: none;
+    color: #818181;
+    padding-bottom: 15px;
+    display: block;
+    transition: .4s; }
+  .footer .product ul li .hiring {
+    color: #498b06;
+    text-decoration: underline; }
+  .footer .product ul li a:hover {
+    color: #498b06; }
