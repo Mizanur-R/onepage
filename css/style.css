@@ -77,7 +77,7 @@ button:focus {
     transition: .3s; }
   .navbar .navbar-nav .nav-link:hover {
     color: #FF8F1F !important; }
-  .navbar .navbar-nav .nav-link:last-child:hover {
+  .navbar .navbar-nav .nav-link.download-btn:hover {
     color: white !important; }
   .navbar .navbar-nav .download-btn {
     color: white !important;
